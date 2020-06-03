@@ -44,11 +44,14 @@ public class SHFA {
 		
 		File[] sub = dir.listFiles();
 		
-		Arrays.sort(sub);
-		
-		for(File f : sub)
+		if(sub != null)
 		{
-			System.out.println(f.getAbsolutePath());
+			Arrays.sort(sub);
+			
+			for(File f : sub)
+			{
+				System.out.println(f.getAbsolutePath());
+			}
 		}
 	}
 
