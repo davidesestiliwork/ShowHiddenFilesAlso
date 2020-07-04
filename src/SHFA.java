@@ -22,9 +22,14 @@ import java.util.Arrays;
 public class SHFA {
 
 	public static void main(String[] args) {
-		if(args.length != 1)
+		if(args.length == 0)
 		{
-			System.out.println("param required");
+			System.out.println("Usage: param 1: directory to list");
+			return;
+		}
+		else if(args.length > 1)
+		{
+			System.out.println("Only one param required");
 			return;
 		}
 		
